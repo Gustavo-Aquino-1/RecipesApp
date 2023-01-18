@@ -1,6 +1,6 @@
 ## Recipes App 🍲
 
-Nesse site você poderá encontrar as melhores de receitas para fazer suas comidas e seus drinks!!
+Nesse site você poderá encontrar as melhores receitas para fazer suas comidas e seus drinks!!
 
 
 <details>
@@ -10,9 +10,9 @@ Nesse site você poderá encontrar as melhores de receitas para fazer suas comid
   
   <ul>
     <li>Realizar uma receita</li>
-    <li>Filtar uma receita pelo nome</li>
-    <li>Filtar uma receita pelo ingrediente</li>
-    <li>Filtar uma receita pela primeira letra</li>
+    <li>Filtrar uma receita pelo nome</li>
+    <li>Filtrar uma receita pelo ingrediente</li>
+    <li>Filtrar uma receita pela primeira letra</li>
     <li>Copiar o link de uma receita</li>
     <li>Favoritar uma receita</li>
   </ul>
