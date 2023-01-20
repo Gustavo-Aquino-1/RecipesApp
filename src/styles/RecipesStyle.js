@@ -28,6 +28,8 @@ const RecipesStyle = styled.section`
 
   .div-recipe {
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-flow: row wrap;
     gap: 15px;
     margin: 20px;
