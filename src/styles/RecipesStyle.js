@@ -15,9 +15,10 @@ const RecipesStyle = styled.section`
 
   .div-btn-filters {
     display: flex;
+    justify-content: center;
     flex-flow: row wrap;
     gap: 5px;
-    margin: 20px 0 0 50px;
+    margin-top: 20px;
   }
 
   .div-btn-filters button {
@@ -27,16 +28,22 @@ const RecipesStyle = styled.section`
   }
 
   .div-recipe {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-flow: row wrap;
-    gap: 15px;
-    margin: 20px;
+    display: grid;
+    width: 80%;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)) ;
+    margin: auto;
+    margin-top: 20px;
   }
 
   .div-recipe img {
     width: 150px;
+  }
+
+  #recipe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 `;
 

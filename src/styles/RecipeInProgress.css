@@ -1,3 +1,7 @@
+body {
+  background: rgba(197, 110, 33, 0);
+}
+
 .done {
   text-decoration: line-through solid black;
 }
@@ -5,4 +9,14 @@
 .finish {
   bottom: 0;
   position: fixed;
+}
+
+#ingredients {
+  width: 50%;
+  display: block;
+  margin-left: 40px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 10px;
 }

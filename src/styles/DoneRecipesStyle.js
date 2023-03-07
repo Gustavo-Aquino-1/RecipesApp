@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 const DoneRecipesStyle = styled.section`
+  
   .filter-btn {
     display: flex;
     justify-content: center;

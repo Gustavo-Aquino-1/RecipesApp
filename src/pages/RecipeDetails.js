@@ -165,7 +165,6 @@ function RecipeDetails({ type, match }) {
                 height={ 400 }
                 src={ recipe.strYoutube.replace('watch?v=', 'embed/') }
                 title={ ` Receita ${recipe.strMeal}` }
-                frameBorder="0"
                 allowFullScreen
                 data-testid="video"
                 style={ { display: 'block', margin: 'auto' } }

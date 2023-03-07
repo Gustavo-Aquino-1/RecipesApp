@@ -5,6 +5,7 @@ import Header from '../components/Header';
 import RecipesContext from '../context/RecipesContext';
 import shareIcon from '../images/shareIcon.svg';
 import DoneRecipesStyle from '../styles/DoneRecipesStyle';
+import Footer from '../components/Footer';
 
 const copy = require('clipboard-copy');
 
@@ -109,6 +110,7 @@ function DoneRecipes() {
             ))
         }
       </ul>
+      <Footer />
     </DoneRecipesStyle>
   );
 }

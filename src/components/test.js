@@ -11,6 +11,7 @@ import clickFavorite from '../services/RecipeInProgressFuncs';
 const RecipeInProgressArea = styled.div`
   #recipe {
     display: block;
+    margin-top: 20px;
     width: 100%;
     text-align: center;
     img {
@@ -60,17 +61,19 @@ function RecipeInProgressCard() {
         }
       };
       await asyncOperation();
-      if (dados !== undefined && !control) {
+      if (dados !== undefined && !control && Object.keys(data).length > 1) {
         setControl(true);
         const keysDataIngredients = Object.keys(dados)
           .filter((e) => e.includes('strIngredient'));
         const filterIngredients = keysDataIngredients.filter((e) => dados[e] !== null);
-        const filterVazios = filterIngredients.filter((e) => dados[e] !== '');
+        let filterVazios = filterIngredients.filter((e) => dados[e] !== '');
+        filterVazios = filterVazios.map((e) => data[e]);
+        console.log(filterVazios);
         setIngredients(filterVazios);
       }
     };
     func();
-  }, [pathname, findRecipeById, id, control]);
+  }, [pathname, findRecipeById, id, control, data]);
   useEffect(() => {
     if (checks.length > 0 && type !== '') {
       const saveObj = getItem('inProgressRecipes');
@@ -179,7 +182,7 @@ function RecipeInProgressCard() {
                     src={ data.strDrinkThumb }
                     alt={ data.strDrink }
                   />
-                  <section id='ingredients'>
+                  <section>
                     {
                       ingredients.map((steps, index) => (
                         <label
@@ -189,7 +192,7 @@ function RecipeInProgressCard() {
                           htmlFor={ `${index} - check` }
                           data-testid={ `${index}-ingredient-step` }
                         >
-                          { data[steps] }
+                          { steps }
                           <input
                             type="checkbox"
                             id={ `${index} - check` }
@@ -217,7 +220,7 @@ function RecipeInProgressCard() {
                     src={ data.strMealThumb }
                     alt={ data.strMeal }
                   />
-                  <section id='ingredients'>
+                  <section>
                     {
                       ingredients.map((mealStep, index) => (
                         <label

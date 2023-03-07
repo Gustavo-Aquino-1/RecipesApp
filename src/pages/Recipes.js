@@ -64,13 +64,18 @@ function Recipes({ name }) {
                       data-testid={ `${index}-recipe-card` }
                       onClick={ () => push(`/drinks/${e.idDrink}`) }
                       aria-hidden="true"
+                      id="recipe"
                     >
                       <img
                         data-testid={ `${index}-card-img` }
                         src={ e.strDrinkThumb }
                         alt={ e.strDrink }
                       />
-                      <h4 data-testid={ `${index}-card-name` }>{e.strDrink}</h4>
+                      <h4
+                        data-testid={ `${index}-card-name` }
+                      >
+                        {e.strDrink.split(' ')[0]}
+                      </h4>
                     </div>
                   ))
               }
@@ -100,13 +105,18 @@ function Recipes({ name }) {
                       data-testid={ `${index}-recipe-card` }
                       onClick={ () => push(`/meals/${e.idMeal}`) }
                       aria-hidden="true"
+                      id="recipe"
                     >
                       <img
                         src={ e.strMealThumb }
                         alt={ e.strMeal }
                         data-testid={ `${index}-card-img` }
                       />
-                      <h4 data-testid={ `${index}-card-name` }>{e.strMeal}</h4>
+                      <h4
+                        data-testid={ `${index}-card-name` }
+                      >
+                        {e.strMeal.split(' ')[0]}
+                      </h4>
                     </div>
                   ))
               }

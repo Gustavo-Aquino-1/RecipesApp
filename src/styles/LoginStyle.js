@@ -5,10 +5,9 @@ const LoginStyle = styled.main`
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-image: url("https://a-static.mlcdn.com.br/1500x1500/papel-de-parede-adesivo-gourmet-menu-restaurantes-cardapio-gf-casa-decor/gfcasadecor/gfc-gourmet-27/f02b063800ef0c5858ff601456b9b236.jpg") ;
-  background-repeat: round;
+  background-image: url('https://static.vecteezy.com/system/resources/previews/006/823/922/original/set-icons-with-foods-doodle-with-foods-icons-on-black-background-vintage-food-set-icons-sweet-elements-background-for-your-project-menu-cafe-shop-free-vector.jpg') ;
   background-size: contain;
-  opacity: 0.85;
+  opacity: 1;
 
   form {
     display: flex;
@@ -42,13 +41,16 @@ const LoginStyle = styled.main`
 
   form button {
     margin-top: 5px;
-    overflow: hidden; 
+    padding: 5px;
+    border-radius: 5px;
+    opacity: 1;
   }
 
   form button:enabled {
     background: pink;
     color: black;
     font-weight: bold;
+    opacity: 1;
   }
 
 `;

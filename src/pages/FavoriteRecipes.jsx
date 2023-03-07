@@ -25,6 +25,7 @@ const FavoriteArea = styled.div`
   }
 
   .icon {
+    width: 30px;
     background-color: transparent;
     border: none;
     margin: 0 0 0 10px;
@@ -54,7 +55,7 @@ function FavoriteRecipes() {
   };
 
   return (
-    <>
+    <div>
       <Header />
       <FavoriteArea>
         <div>
@@ -127,6 +128,7 @@ function FavoriteRecipes() {
                         <img
                           src={ shareIcon }
                           alt="Compartilhar"
+                          className='icon'
                           data-testid={ `${index}-horizontal-share-btn` }
                         />
                       </button>
@@ -138,8 +140,9 @@ function FavoriteRecipes() {
                       >
                         <img
                           src={ heartBlack }
-                          alt="Favoriatr"
+                          alt="Favoritar"
                           data-testid={ `${index}-horizontal-favorite-btn` }
+                          className='icon'
                         />
                       </button>
 
@@ -151,7 +154,7 @@ function FavoriteRecipes() {
           )
         }
       </FavoriteArea>
-    </>
+    </div>
   );
 }
 
