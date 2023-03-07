@@ -1,3 +1,4 @@
+/* stylelint-disable selector-max-specificity */
 body {
   background: rgba(197, 110, 33, 0);
 }
@@ -12,11 +13,12 @@ body {
 }
 
 #ingredients {
-  width: 50%;
-  display: block;
-  margin-left: 40px;
   display: flex;
   flex-direction: column;
-  text-align: left;
+  margin-left: 40px;
   padding: 10px;
+  text-align: left;
+  width: 50%;
 }
+
+/* stylelint-disable-next-line no-missing-end-of-source-newline */

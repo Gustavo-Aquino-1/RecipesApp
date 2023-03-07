@@ -1,12 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import { useHistory } from 'react-router-dom';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import { getItem } from '../services/LocalStorageFuncs';
 
 function Profile() {
-  const [email, setEmail] = useState('');
-
   useEffect(() => {
     setEmail(getItem('user') ? getItem('user').email : '');
   }, []);
@@ -21,7 +19,7 @@ function Profile() {
   };
 
   return (
-    <section style={{ textAlign:'center' }}>
+    <section style={ { textAlign: 'center' } }>
       <Header />
       {/* <p data-testid="profile-email">{email}</p> */}
       <button

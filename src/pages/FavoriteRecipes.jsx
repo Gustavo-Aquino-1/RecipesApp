@@ -128,7 +128,7 @@ function FavoriteRecipes() {
                         <img
                           src={ shareIcon }
                           alt="Compartilhar"
-                          className='icon'
+                          className="icon"
                           data-testid={ `${index}-horizontal-share-btn` }
                         />
                       </button>
@@ -142,7 +142,7 @@ function FavoriteRecipes() {
                           src={ heartBlack }
                           alt="Favoritar"
                           data-testid={ `${index}-horizontal-favorite-btn` }
-                          className='icon'
+                          className="icon"
                         />
                       </button>
 

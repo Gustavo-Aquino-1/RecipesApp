@@ -1,3 +1,4 @@
+/* eslint-disable max-lines */
 import React, { useContext, useEffect, useState } from 'react';
 import { useLocation, useParams, useHistory } from 'react-router-dom';
 import styled from 'styled-components';
@@ -179,7 +180,7 @@ function RecipeInProgressCard() {
                     src={ data.strDrinkThumb }
                     alt={ data.strDrink }
                   />
-                  <section id='ingredients'>
+                  <section id="ingredients">
                     {
                       ingredients.map((steps, index) => (
                         <label
@@ -217,7 +218,7 @@ function RecipeInProgressCard() {
                     src={ data.strMealThumb }
                     alt={ data.strMeal }
                   />
-                  <section id='ingredients'>
+                  <section id="ingredients">
                     {
                       ingredients.map((mealStep, index) => (
                         <label
